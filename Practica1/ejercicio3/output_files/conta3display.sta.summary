@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.640
+TNS   : -54.869
+
+Type  : Slow 1200mV 85C Model Setup 'conta2display:u7|contador:u4|divf:u1|clkl'
+Slack : -2.879
+TNS   : -61.654
+
+Type  : Slow 1200mV 85C Model Setup 'conta2display:u7|cont:u5|bandera'
+Slack : -2.837
+TNS   : -58.701
+
+Type  : Slow 1200mV 85C Model Setup 'conta2display:u7|contador:u4|cont:u2|bandera'
+Slack : -2.828
+TNS   : -59.122
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.637
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'conta2display:u7|cont:u5|bandera'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'conta2display:u7|contador:u4|cont:u2|bandera'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'conta2display:u7|contador:u4|divf:u1|clkl'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'conta2display:u7|cont:u5|bandera'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'conta2display:u7|contador:u4|cont:u2|bandera'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'conta2display:u7|contador:u4|divf:u1|clkl'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.235
+TNS   : -47.820
+
+Type  : Slow 1200mV 0C Model Setup 'conta2display:u7|contador:u4|divf:u1|clkl'
+Slack : -2.584
+TNS   : -52.638
+
+Type  : Slow 1200mV 0C Model Setup 'conta2display:u7|contador:u4|cont:u2|bandera'
+Slack : -2.530
+TNS   : -50.468
+
+Type  : Slow 1200mV 0C Model Setup 'conta2display:u7|cont:u5|bandera'
+Slack : -2.527
+TNS   : -49.883
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.588
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'conta2display:u7|cont:u5|bandera'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'conta2display:u7|contador:u4|cont:u2|bandera'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'conta2display:u7|contador:u4|divf:u1|clkl'
+Slack : 0.598
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'conta2display:u7|cont:u5|bandera'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'conta2display:u7|contador:u4|cont:u2|bandera'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'conta2display:u7|contador:u4|divf:u1|clkl'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.466
+TNS   : -8.857
+
+Type  : Fast 1200mV 0C Model Setup 'conta2display:u7|contador:u4|cont:u2|bandera'
+Slack : -0.578
+TNS   : -5.330
+
+Type  : Fast 1200mV 0C Model Setup 'conta2display:u7|contador:u4|divf:u1|clkl'
+Slack : -0.560
+TNS   : -5.961
+
+Type  : Fast 1200mV 0C Model Setup 'conta2display:u7|cont:u5|bandera'
+Slack : -0.550
+TNS   : -5.331
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'conta2display:u7|cont:u5|bandera'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'conta2display:u7|contador:u4|cont:u2|bandera'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'conta2display:u7|contador:u4|divf:u1|clkl'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -29.895
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'conta2display:u7|cont:u5|bandera'
+Slack : -1.000
+TNS   : -33.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'conta2display:u7|contador:u4|cont:u2|bandera'
+Slack : -1.000
+TNS   : -33.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'conta2display:u7|contador:u4|divf:u1|clkl'
+Slack : -1.000
+TNS   : -33.000
+
+------------------------------------------------------------

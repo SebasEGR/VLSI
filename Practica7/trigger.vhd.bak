@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity trigger is
+port (clk,rst,echo: in std_logic;
+		salida: out std_logic);
+end entity
+
+architectur arqtrigger of trigger is
+signal conteo: integer range 0 to 25000000:= 0;
+begin
+	process(clk)
+		begin
+			if(rst = '1') then
+				salida <= '0';
+			elsif(echo<='0') then 
+				salida <= clk;
+			end if;
+	end process;
+end architecture;
+

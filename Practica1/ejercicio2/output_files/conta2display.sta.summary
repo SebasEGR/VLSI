@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.661
+TNS   : -55.682
+
+Type  : Slow 1200mV 85C Model Setup 'contador:u4|divf:u1|clkl'
+Slack : -2.868
+TNS   : -58.761
+
+Type  : Slow 1200mV 85C Model Setup 'contador:u4|cont:u2|bandera'
+Slack : -2.632
+TNS   : -57.798
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.632
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'contador:u4|divf:u1|clkl'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'contador:u4|cont:u2|bandera'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'contador:u4|cont:u2|bandera'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'contador:u4|divf:u1|clkl'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.221
+TNS   : -48.657
+
+Type  : Slow 1200mV 0C Model Setup 'contador:u4|divf:u1|clkl'
+Slack : -2.559
+TNS   : -49.837
+
+Type  : Slow 1200mV 0C Model Setup 'contador:u4|cont:u2|bandera'
+Slack : -2.342
+TNS   : -49.194
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.582
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'contador:u4|cont:u2|bandera'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'contador:u4|divf:u1|clkl'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'contador:u4|cont:u2|bandera'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'contador:u4|divf:u1|clkl'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.559
+TNS   : -9.446
+
+Type  : Fast 1200mV 0C Model Setup 'contador:u4|divf:u1|clkl'
+Slack : -0.585
+TNS   : -5.361
+
+Type  : Fast 1200mV 0C Model Setup 'contador:u4|cont:u2|bandera'
+Slack : -0.476
+TNS   : -4.714
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'contador:u4|divf:u1|clkl'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'contador:u4|cont:u2|bandera'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -29.806
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'contador:u4|cont:u2|bandera'
+Slack : -1.000
+TNS   : -33.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'contador:u4|divf:u1|clkl'
+Slack : -1.000
+TNS   : -33.000
+
+------------------------------------------------------------

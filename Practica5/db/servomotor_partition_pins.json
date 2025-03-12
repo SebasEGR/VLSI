@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "control",
+					"strict" : false
+				},
+				{
+					"name" : "inc",
+					"strict" : false
+				},
+				{
+					"name" : "pi",
+					"strict" : false
+				},
+				{
+					"name" : "pf",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "dec",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

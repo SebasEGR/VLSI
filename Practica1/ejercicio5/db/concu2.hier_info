@@ -1,0 +1,44 @@
+|concu2
+clk => clkl.CLK
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+clk => contador[4].CLK
+clk => contador[5].CLK
+clk => contador[6].CLK
+clk => contador[7].CLK
+clk => contador[8].CLK
+clk => contador[9].CLK
+clk => contador[10].CLK
+clk => contador[11].CLK
+clk => contador[12].CLK
+clk => contador[13].CLK
+clk => contador[14].CLK
+clk => contador[15].CLK
+clk => contador[16].CLK
+clk => contador[17].CLK
+clk => contador[18].CLK
+clk => contador[19].CLK
+clk => contador[20].CLK
+clk => contador[21].CLK
+clk => contador[22].CLK
+clk => contador[23].CLK
+clk => contador[24].CLK
+ssg0[0] << WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+ssg0[1] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+ssg0[2] << ssg0.DB_MAX_OUTPUT_PORT_TYPE
+ssg0[3] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+ssg0[4] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+ssg0[5] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+ssg0[6] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+ssg1[0] << WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+ssg1[1] << WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+ssg1[2] << ssg1.DB_MAX_OUTPUT_PORT_TYPE
+ssg1[3] << WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+ssg1[4] << WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+ssg1[5] << WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+ssg1[6] << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+carry << bandera1.DB_MAX_OUTPUT_PORT_TYPE
+
+

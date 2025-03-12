@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ssg2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ssg4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "banderasalxd",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

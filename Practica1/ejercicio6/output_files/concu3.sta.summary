@@ -1,0 +1,185 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'bandera2'
+Slack : -4.875
+TNS   : -149.622
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.465
+TNS   : -53.489
+
+Type  : Slow 1200mV 85C Model Setup 'bandera1'
+Slack : -3.049
+TNS   : -72.776
+
+Type  : Slow 1200mV 85C Model Setup 'bandera3'
+Slack : -2.964
+TNS   : -62.738
+
+Type  : Slow 1200mV 85C Model Setup 'clkl'
+Slack : -2.711
+TNS   : -61.211
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'bandera2'
+Slack : 0.525
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'bandera3'
+Slack : 0.638
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'bandera1'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clkl'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bandera1'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bandera2'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clkl'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bandera3'
+Slack : -1.403
+TNS   : -44.896
+
+Type  : Slow 1200mV 0C Model Setup 'bandera2'
+Slack : -4.416
+TNS   : -135.314
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.082
+TNS   : -46.471
+
+Type  : Slow 1200mV 0C Model Setup 'bandera1'
+Slack : -2.649
+TNS   : -62.498
+
+Type  : Slow 1200mV 0C Model Setup 'bandera3'
+Slack : -2.632
+TNS   : -53.639
+
+Type  : Slow 1200mV 0C Model Setup 'clkl'
+Slack : -2.431
+TNS   : -52.283
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'bandera2'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'bandera3'
+Slack : 0.590
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'bandera1'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clkl'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bandera1'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bandera2'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clkl'
+Slack : -1.403
+TNS   : -46.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bandera3'
+Slack : -1.403
+TNS   : -44.896
+
+Type  : Fast 1200mV 0C Model Setup 'bandera2'
+Slack : -1.509
+TNS   : -44.529
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.427
+TNS   : -7.782
+
+Type  : Fast 1200mV 0C Model Setup 'bandera1'
+Slack : -0.691
+TNS   : -10.754
+
+Type  : Fast 1200mV 0C Model Setup 'bandera3'
+Slack : -0.649
+TNS   : -6.949
+
+Type  : Fast 1200mV 0C Model Setup 'clkl'
+Slack : -0.565
+TNS   : -6.021
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'bandera2'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'bandera3'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clkl'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'bandera1'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -29.870
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bandera1'
+Slack : -1.000
+TNS   : -33.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bandera2'
+Slack : -1.000
+TNS   : -33.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clkl'
+Slack : -1.000
+TNS   : -33.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bandera3'
+Slack : -1.000
+TNS   : -32.000
+
+------------------------------------------------------------

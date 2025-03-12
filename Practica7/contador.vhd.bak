@@ -1,0 +1,115 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity contador is
+port(
+    echo, clkl, rst: in std_logic;
+    salida: out std_logic := '0';
+    ss0, ss1: out std_logic_vector(3 downto 0)
+);
+end entity;
+
+architecture argcontador of contador is
+    signal conteo: integer range 0 to 1294 := 0;
+begin
+    process(echo, clkl, rst)
+    begin
+        if rst = '1' then
+            conteo <= 0;
+            salida <= '0';
+            ss0 <= "0000";
+            ss1 <= "0000";
+        elsif rising_edge(clkl) then
+            if echo = '1' then
+                conteo <= conteo + 1;
+                salida <= '0';
+            else
+                if (conteo >= 118) and (conteo < 176) then -- 2
+                    salida <= '0';
+                    ss0 <= "0010";
+                    ss1 <= "0000";
+                elsif (conteo >= 176) and (conteo < 235) then -- 3
+                    salida <= '0';
+                    ss0 <= "0011";
+                    ss1 <= "0000";
+                elsif (conteo >= 235) and (conteo < 294) then -- 4
+                    salida <= '1';
+                    ss0 <= "0100";
+                    ss1 <= "0000";
+                elsif (conteo >= 294) and (conteo < 353) then -- 5
+                    salida <= '1';
+                    ss0 <= "0101";
+                    ss1 <= "0000";
+                elsif (conteo >= 353) and (conteo < 412) then -- 6
+                    salida <= '0';
+                    ss0 <= "0110";
+                    ss1 <= "0000";
+                elsif (conteo >= 412) and (conteo < 471) then -- 7
+                    salida <= '0';
+                    ss0 <= "0111";
+                    ss1 <= "0000";
+                elsif (conteo >= 471) and (conteo < 529) then -- 8
+                    salida <= '0';
+                    ss0 <= "1000";
+                    ss1 <= "0000";
+                elsif (conteo >= 529) and (conteo < 588) then -- 9
+                    salida <= '0';
+                    ss0 <= "1001";
+                    ss1 <= "0000";
+                elsif (conteo >= 588) and (conteo < 647) then -- 10
+                    salida <= '0';
+                    ss0 <= "0000";
+                    ss1 <= "0001";
+                elsif (conteo >= 647) and (conteo < 706) then -- 11
+                    salida <= '0';
+                    ss0 <= "0001";
+                    ss1 <= "0001";
+                elsif (conteo >= 706) and (conteo < 765) then -- 12
+                    salida <= '0';
+                    ss0 <= "0010";
+                    ss1 <= "0001";
+                elsif (conteo >= 765) and (conteo < 824) then -- 13
+                    salida <= '0';
+                    ss0 <= "0011";
+                    ss1 <= "0001";
+                elsif (conteo >= 824) and (conteo < 883) then -- 14
+                    salida <= '0';
+                    ss0 <= "0100";
+                    ss1 <= "0001";
+                elsif (conteo >= 883) and (conteo < 942) then -- 15
+                    salida <= '0';
+                    ss0 <= "0101";
+                    ss1 <= "0001";
+                elsif (conteo >= 942) and (conteo < 1001) then -- 16
+                    salida <= '0';
+                    ss0 <= "0110";
+                    ss1 <= "0001";
+                elsif (conteo >= 1001) and (conteo < 1060) then -- 17
+                    salida <= '0';
+                    ss0 <= "0111";
+                    ss1 <= "0001";
+                elsif (conteo >= 1060) and (conteo < 1119) then -- 18
+                    salida <= '0';
+                    ss0 <= "1000";
+                    ss1 <= "0001";
+                elsif (conteo >= 1119) and (conteo < 1178) then -- 19
+                    salida <= '0';
+                    ss0 <= "1001";
+                    ss1 <= "0001";
+                elsif (conteo >= 1178) and (conteo < 1237) then -- 20
+                    salida <= '1';
+                    ss0 <= "0000";
+                    ss1 <= "0010";
+                elsif (conteo >= 1237) and (conteo < 1294) then -- 21
+                    salida <= '0';
+                    ss0 <= "0001";
+                    ss1 <= "0010";
+                else
+                    salida <= '1'; -- Default state
+                    ss0 <= "1111"; -- Default state (or blank)
+                    ss1 <= "1111"; -- Default state (or blank)
+                end if;
+            end if;
+        end if;
+    end process;
+end architecture;
