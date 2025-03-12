@@ -1,0 +1,74 @@
+|pwm
+clk => divf:ul.clk
+led <= senal:u2.snl
+
+
+|pwm|divf:ul
+clk => clkl~reg0.CLK
+clk => conteo[0].CLK
+clk => conteo[1].CLK
+clk => conteo[2].CLK
+clk => conteo[3].CLK
+clk => conteo[4].CLK
+clk => conteo[5].CLK
+clk => conteo[6].CLK
+clk => conteo[7].CLK
+clk => conteo[8].CLK
+clk => conteo[9].CLK
+clk => conteo[10].CLK
+clk => conteo[11].CLK
+clk => conteo[12].CLK
+clk => conteo[13].CLK
+clk => conteo[14].CLK
+clkl <= clkl~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pwm|senal:u2
+clk => conteo[0].CLK
+clk => conteo[1].CLK
+clk => conteo[2].CLK
+clk => conteo[3].CLK
+clk => conteo[4].CLK
+clk => conteo[5].CLK
+clk => conteo[6].CLK
+clk => conteo[7].CLK
+clk => conteo[8].CLK
+clk => conteo[9].CLK
+clk => conteo[10].CLK
+clk => conteo[11].CLK
+clk => snl~reg0.CLK
+duty[0] => ~NO_FANOUT~
+duty[1] => ~NO_FANOUT~
+duty[2] => ~NO_FANOUT~
+duty[3] => ~NO_FANOUT~
+duty[4] => ~NO_FANOUT~
+duty[5] => ~NO_FANOUT~
+duty[6] => ~NO_FANOUT~
+duty[7] => ~NO_FANOUT~
+duty[8] => ~NO_FANOUT~
+duty[9] => ~NO_FANOUT~
+duty[10] => ~NO_FANOUT~
+duty[11] => ~NO_FANOUT~
+duty[12] => ~NO_FANOUT~
+duty[13] => ~NO_FANOUT~
+duty[14] => ~NO_FANOUT~
+duty[15] => ~NO_FANOUT~
+duty[16] => ~NO_FANOUT~
+duty[17] => ~NO_FANOUT~
+duty[18] => ~NO_FANOUT~
+duty[19] => ~NO_FANOUT~
+duty[20] => ~NO_FANOUT~
+duty[21] => ~NO_FANOUT~
+duty[22] => ~NO_FANOUT~
+duty[23] => ~NO_FANOUT~
+duty[24] => ~NO_FANOUT~
+duty[25] => ~NO_FANOUT~
+duty[26] => ~NO_FANOUT~
+duty[27] => ~NO_FANOUT~
+duty[28] => ~NO_FANOUT~
+duty[29] => ~NO_FANOUT~
+duty[30] => ~NO_FANOUT~
+duty[31] => ~NO_FANOUT~
+snl <= snl~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

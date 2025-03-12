@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.512
+TNS   : -53.218
+
+Type  : Slow 1200mV 85C Model Setup 'relojlento:u1|led'
+Slack : -0.139
+TNS   : -0.139
+
+Type  : Slow 1200mV 85C Model Hold 'relojlento:u1|led'
+Slack : 0.349
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.637
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'relojlento:u1|led'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -4.111
+TNS   : -46.461
+
+Type  : Slow 1200mV 0C Model Setup 'relojlento:u1|led'
+Slack : -0.043
+TNS   : -0.043
+
+Type  : Slow 1200mV 0C Model Hold 'relojlento:u1|led'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.590
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.478
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'relojlento:u1|led'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.476
+TNS   : -8.738
+
+Type  : Fast 1200mV 0C Model Setup 'relojlento:u1|led'
+Slack : 0.513
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'relojlento:u1|led'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -29.869
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'relojlento:u1|led'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

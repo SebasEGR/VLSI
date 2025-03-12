@@ -1,0 +1,528 @@
+Analysis & Synthesis report for pwm
+Mon Mar  3 13:56:35 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: divf:ul
+ 11. Port Connectivity Checks: "senal:l8"
+ 12. Port Connectivity Checks: "senal:l7"
+ 13. Port Connectivity Checks: "senal:l6"
+ 14. Port Connectivity Checks: "senal:l5"
+ 15. Port Connectivity Checks: "senal:l4"
+ 16. Port Connectivity Checks: "senal:l3"
+ 17. Port Connectivity Checks: "senal:l2"
+ 18. Port Connectivity Checks: "senal:l1"
+ 19. Port Connectivity Checks: "senal:l0"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Mar  3 13:56:35 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; pwm                                            ;
+; Top-level Entity Name              ; pwm                                            ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 56                                             ;
+;     Total combinational functions  ; 56                                             ;
+;     Dedicated logic registers      ; 27                                             ;
+; Total registers                    ; 27                                             ;
+; Total pins                         ; 10                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; pwm                ; pwm                ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; senal.vhdl                       ; yes             ; User VHDL File  ; C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/senal.vhdl ;         ;
+; pwm.vhdl                         ; yes             ; User VHDL File  ; C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/pwm.vhdl   ;         ;
+; divf.vhdl                        ; yes             ; User VHDL File  ; C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/divf.vhdl  ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 56           ;
+;                                             ;              ;
+; Total combinational functions               ; 56           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 21           ;
+;     -- 3 input functions                    ; 13           ;
+;     -- <=2 input functions                  ; 22           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 40           ;
+;     -- arithmetic mode                      ; 16           ;
+;                                             ;              ;
+; Total registers                             ; 27           ;
+;     -- Dedicated logic registers            ; 27           ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 10           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; divf:ul|clkl ;
+; Maximum fan-out                             ; 19           ;
+; Total fan-out                               ; 237          ;
+; Average fan-out                             ; 2.30         ;
++---------------------------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |pwm                       ; 56 (0)              ; 27 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 10   ; 0            ; 0          ; |pwm                ; pwm         ; work         ;
+;    |divf:ul|               ; 18 (18)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|divf:ul        ; divf        ; work         ;
+;    |senal:l0|              ; 21 (21)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|senal:l0       ; senal       ; work         ;
+;    |senal:l1|              ; 4 (4)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|senal:l1       ; senal       ; work         ;
+;    |senal:l2|              ; 3 (3)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|senal:l2       ; senal       ; work         ;
+;    |senal:l3|              ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|senal:l3       ; senal       ; work         ;
+;    |senal:l4|              ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|senal:l4       ; senal       ; work         ;
+;    |senal:l5|              ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|senal:l5       ; senal       ; work         ;
+;    |senal:l6|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|senal:l6       ; senal       ; work         ;
+;    |senal:l7|              ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|senal:l7       ; senal       ; work         ;
+;    |senal:l8|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pwm|senal:l8       ; senal       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; senal:l1|conteo[9]                     ; Merged with senal:l0|conteo[9]         ;
+; senal:l2|conteo[9]                     ; Merged with senal:l0|conteo[9]         ;
+; senal:l3|conteo[9]                     ; Merged with senal:l0|conteo[9]         ;
+; senal:l4|conteo[9]                     ; Merged with senal:l0|conteo[9]         ;
+; senal:l5|conteo[9]                     ; Merged with senal:l0|conteo[9]         ;
+; senal:l6|conteo[9]                     ; Merged with senal:l0|conteo[9]         ;
+; senal:l7|conteo[9]                     ; Merged with senal:l0|conteo[9]         ;
+; senal:l8|conteo[9]                     ; Merged with senal:l0|conteo[9]         ;
+; senal:l1|conteo[8]                     ; Merged with senal:l0|conteo[8]         ;
+; senal:l2|conteo[8]                     ; Merged with senal:l0|conteo[8]         ;
+; senal:l3|conteo[8]                     ; Merged with senal:l0|conteo[8]         ;
+; senal:l4|conteo[8]                     ; Merged with senal:l0|conteo[8]         ;
+; senal:l5|conteo[8]                     ; Merged with senal:l0|conteo[8]         ;
+; senal:l6|conteo[8]                     ; Merged with senal:l0|conteo[8]         ;
+; senal:l7|conteo[8]                     ; Merged with senal:l0|conteo[8]         ;
+; senal:l8|conteo[8]                     ; Merged with senal:l0|conteo[8]         ;
+; senal:l1|conteo[7]                     ; Merged with senal:l0|conteo[7]         ;
+; senal:l2|conteo[7]                     ; Merged with senal:l0|conteo[7]         ;
+; senal:l3|conteo[7]                     ; Merged with senal:l0|conteo[7]         ;
+; senal:l4|conteo[7]                     ; Merged with senal:l0|conteo[7]         ;
+; senal:l5|conteo[7]                     ; Merged with senal:l0|conteo[7]         ;
+; senal:l6|conteo[7]                     ; Merged with senal:l0|conteo[7]         ;
+; senal:l7|conteo[7]                     ; Merged with senal:l0|conteo[7]         ;
+; senal:l8|conteo[7]                     ; Merged with senal:l0|conteo[7]         ;
+; senal:l1|conteo[6]                     ; Merged with senal:l0|conteo[6]         ;
+; senal:l2|conteo[6]                     ; Merged with senal:l0|conteo[6]         ;
+; senal:l3|conteo[6]                     ; Merged with senal:l0|conteo[6]         ;
+; senal:l4|conteo[6]                     ; Merged with senal:l0|conteo[6]         ;
+; senal:l5|conteo[6]                     ; Merged with senal:l0|conteo[6]         ;
+; senal:l6|conteo[6]                     ; Merged with senal:l0|conteo[6]         ;
+; senal:l7|conteo[6]                     ; Merged with senal:l0|conteo[6]         ;
+; senal:l8|conteo[6]                     ; Merged with senal:l0|conteo[6]         ;
+; senal:l1|conteo[5]                     ; Merged with senal:l0|conteo[5]         ;
+; senal:l2|conteo[5]                     ; Merged with senal:l0|conteo[5]         ;
+; senal:l3|conteo[5]                     ; Merged with senal:l0|conteo[5]         ;
+; senal:l4|conteo[5]                     ; Merged with senal:l0|conteo[5]         ;
+; senal:l5|conteo[5]                     ; Merged with senal:l0|conteo[5]         ;
+; senal:l6|conteo[5]                     ; Merged with senal:l0|conteo[5]         ;
+; senal:l7|conteo[5]                     ; Merged with senal:l0|conteo[5]         ;
+; senal:l8|conteo[5]                     ; Merged with senal:l0|conteo[5]         ;
+; senal:l1|conteo[4]                     ; Merged with senal:l0|conteo[4]         ;
+; senal:l2|conteo[4]                     ; Merged with senal:l0|conteo[4]         ;
+; senal:l3|conteo[4]                     ; Merged with senal:l0|conteo[4]         ;
+; senal:l4|conteo[4]                     ; Merged with senal:l0|conteo[4]         ;
+; senal:l5|conteo[4]                     ; Merged with senal:l0|conteo[4]         ;
+; senal:l6|conteo[4]                     ; Merged with senal:l0|conteo[4]         ;
+; senal:l7|conteo[4]                     ; Merged with senal:l0|conteo[4]         ;
+; senal:l8|conteo[4]                     ; Merged with senal:l0|conteo[4]         ;
+; senal:l1|conteo[3]                     ; Merged with senal:l0|conteo[3]         ;
+; senal:l2|conteo[3]                     ; Merged with senal:l0|conteo[3]         ;
+; senal:l3|conteo[3]                     ; Merged with senal:l0|conteo[3]         ;
+; senal:l4|conteo[3]                     ; Merged with senal:l0|conteo[3]         ;
+; senal:l5|conteo[3]                     ; Merged with senal:l0|conteo[3]         ;
+; senal:l6|conteo[3]                     ; Merged with senal:l0|conteo[3]         ;
+; senal:l7|conteo[3]                     ; Merged with senal:l0|conteo[3]         ;
+; senal:l8|conteo[3]                     ; Merged with senal:l0|conteo[3]         ;
+; senal:l1|conteo[2]                     ; Merged with senal:l0|conteo[2]         ;
+; senal:l2|conteo[2]                     ; Merged with senal:l0|conteo[2]         ;
+; senal:l3|conteo[2]                     ; Merged with senal:l0|conteo[2]         ;
+; senal:l4|conteo[2]                     ; Merged with senal:l0|conteo[2]         ;
+; senal:l5|conteo[2]                     ; Merged with senal:l0|conteo[2]         ;
+; senal:l6|conteo[2]                     ; Merged with senal:l0|conteo[2]         ;
+; senal:l7|conteo[2]                     ; Merged with senal:l0|conteo[2]         ;
+; senal:l8|conteo[2]                     ; Merged with senal:l0|conteo[2]         ;
+; senal:l1|conteo[1]                     ; Merged with senal:l0|conteo[1]         ;
+; senal:l2|conteo[1]                     ; Merged with senal:l0|conteo[1]         ;
+; senal:l3|conteo[1]                     ; Merged with senal:l0|conteo[1]         ;
+; senal:l4|conteo[1]                     ; Merged with senal:l0|conteo[1]         ;
+; senal:l5|conteo[1]                     ; Merged with senal:l0|conteo[1]         ;
+; senal:l6|conteo[1]                     ; Merged with senal:l0|conteo[1]         ;
+; senal:l7|conteo[1]                     ; Merged with senal:l0|conteo[1]         ;
+; senal:l8|conteo[1]                     ; Merged with senal:l0|conteo[1]         ;
+; senal:l1|conteo[0]                     ; Merged with senal:l0|conteo[0]         ;
+; senal:l2|conteo[0]                     ; Merged with senal:l0|conteo[0]         ;
+; senal:l3|conteo[0]                     ; Merged with senal:l0|conteo[0]         ;
+; senal:l4|conteo[0]                     ; Merged with senal:l0|conteo[0]         ;
+; senal:l5|conteo[0]                     ; Merged with senal:l0|conteo[0]         ;
+; senal:l6|conteo[0]                     ; Merged with senal:l0|conteo[0]         ;
+; senal:l7|conteo[0]                     ; Merged with senal:l0|conteo[0]         ;
+; senal:l8|conteo[0]                     ; Merged with senal:l0|conteo[0]         ;
+; senal:l0|snl                           ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 81 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 27    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divf:ul ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; num            ; 250   ; Signed Integer              ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "senal:l8"          ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; duty[31..3] ; Input ; Info     ; Stuck at GND ;
+; duty[1..0]  ; Input ; Info     ; Stuck at GND ;
+; duty[2]     ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "senal:l7"          ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; duty[31..4] ; Input ; Info     ; Stuck at GND ;
+; duty[2..0]  ; Input ; Info     ; Stuck at GND ;
+; duty[3]     ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "senal:l6"          ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; duty[31..5] ; Input ; Info     ; Stuck at GND ;
+; duty[3..0]  ; Input ; Info     ; Stuck at GND ;
+; duty[4]     ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "senal:l5"          ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; duty[31..6] ; Input ; Info     ; Stuck at GND ;
+; duty[4..0]  ; Input ; Info     ; Stuck at GND ;
+; duty[5]     ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "senal:l4"          ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; duty[31..7] ; Input ; Info     ; Stuck at GND ;
+; duty[5..0]  ; Input ; Info     ; Stuck at GND ;
+; duty[6]     ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "senal:l3"          ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; duty[31..8] ; Input ; Info     ; Stuck at GND ;
+; duty[6..0]  ; Input ; Info     ; Stuck at GND ;
+; duty[7]     ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "senal:l2"          ;
++-------------+-------+----------+--------------+
+; Port        ; Type  ; Severity ; Details      ;
++-------------+-------+----------+--------------+
+; duty[31..9] ; Input ; Info     ; Stuck at GND ;
+; duty[7..0]  ; Input ; Info     ; Stuck at GND ;
+; duty[8]     ; Input ; Info     ; Stuck at VCC ;
++-------------+-------+----------+--------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "senal:l1"           ;
++--------------+-------+----------+--------------+
+; Port         ; Type  ; Severity ; Details      ;
++--------------+-------+----------+--------------+
+; duty[31..10] ; Input ; Info     ; Stuck at GND ;
+; duty[8..3]   ; Input ; Info     ; Stuck at GND ;
+; duty[1..0]   ; Input ; Info     ; Stuck at GND ;
+; duty[9]      ; Input ; Info     ; Stuck at VCC ;
+; duty[2]      ; Input ; Info     ; Stuck at VCC ;
++--------------+-------+----------+--------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "senal:l0"           ;
++--------------+-------+----------+--------------+
+; Port         ; Type  ; Severity ; Details      ;
++--------------+-------+----------+--------------+
+; duty[31..11] ; Input ; Info     ; Stuck at GND ;
+; duty[9..1]   ; Input ; Info     ; Stuck at GND ;
+; duty[10]     ; Input ; Info     ; Stuck at VCC ;
+; duty[0]      ; Input ; Info     ; Stuck at VCC ;
++--------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 10                          ;
+; cycloneiii_ff         ; 27                          ;
+;     plain             ; 27                          ;
+; cycloneiii_lcell_comb ; 57                          ;
+;     arith             ; 16                          ;
+;         2 data inputs ; 16                          ;
+;     normal            ; 41                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 21                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.26                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Mon Mar  3 13:56:10 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pwm -c pwm
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file senal.vhdl
+    Info (12022): Found design unit 1: senal-arqsenal File: C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/senal.vhdl Line: 11
+    Info (12023): Found entity 1: senal File: C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/senal.vhdl Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file pwm.vhdl
+    Info (12022): Found design unit 1: pwm-arqpwm File: C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/pwm.vhdl Line: 10
+    Info (12023): Found entity 1: pwm File: C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/pwm.vhdl Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file divf.vhdl
+    Info (12022): Found design unit 1: divf-arqdivf File: C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/divf.vhdl Line: 12
+    Info (12023): Found entity 1: divf File: C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/divf.vhdl Line: 4
+Info (12127): Elaborating entity "pwm" for the top level hierarchy
+Info (12129): Elaborating entity "divf" using architecture "A:arqdivf" for hierarchy "divf:ul" File: C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/pwm.vhdl Line: 13
+Info (12129): Elaborating entity "senal" using architecture "A:arqsenal" for hierarchy "senal:l0" File: C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/pwm.vhdl Line: 14
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "led[0]" is stuck at VCC File: C:/Users/Hp/Desktop/VLSI/Practica4/Ejercicio3/pwm.vhdl Line: 7
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 56 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Mon Mar  3 13:56:35 2025
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:46
+
+

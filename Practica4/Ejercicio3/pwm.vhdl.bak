@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity pwm is
+  port (
+    clk : in std_logic;
+    led : out std_logic_vector(8 downto 0));
+end entity;
+
+architecture arqpwm of pwm is
+  signal clkl : std_logic;
+begin
+  ul : entity work.divf(arqdivf) generic map(250) port map(clk, clkl);
+  l0 : entity work.senal (arqsenal) port map(clkl, 900, led(0));
+  l1 : entity work.senal (arqsenal) port map(clkl, 800, led(1));
+  l2 : entity work.senal (arqsenal) port map(clkl, 700, led(2));
+  l3 : entity work.senal (arqsenal) port map(clkl, 600, led(3));
+  l4 : entity work.senal (arqsenal) port map(clkl, 500, led(4));
+  l5 : entity work.senal (arqsenal) port map(clkl, 400, led(5));
+  l6 : entity work.senal (arqsenal) port map(clkl, 300, led(6));
+  l7 : entity work.senal (arqsenal) port map(clkl, 200, led(7));
+  l8 : entity work.senal (arqsenal) port map(clkl, 100, led(8));
+end architecture;

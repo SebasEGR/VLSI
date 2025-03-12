@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.271
+TNS   : -65.225
+
+Type  : Slow 1200mV 85C Model Setup 'divf:dvfl|clkl'
+Slack : -3.153
+TNS   : -45.210
+
+Type  : Slow 1200mV 85C Model Setup 'divf:dvfff|clkl'
+Slack : -3.012
+TNS   : -64.794
+
+Type  : Slow 1200mV 85C Model Hold 'divf:dvfff|clkl'
+Slack : 0.609
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divf:dvfl|clkl'
+Slack : 0.625
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.637
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -52.105
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divf:dvfff|clkl'
+Slack : -1.403
+TNS   : -138.897
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divf:dvfl|clkl'
+Slack : -1.403
+TNS   : -26.657
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.875
+TNS   : -56.432
+
+Type  : Slow 1200mV 0C Model Setup 'divf:dvfl|clkl'
+Slack : -2.742
+TNS   : -39.403
+
+Type  : Slow 1200mV 0C Model Setup 'divf:dvfff|clkl'
+Slack : -2.720
+TNS   : -52.644
+
+Type  : Slow 1200mV 0C Model Hold 'divf:dvfff|clkl'
+Slack : 0.560
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divf:dvfl|clkl'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.588
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -52.105
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divf:dvfff|clkl'
+Slack : -1.403
+TNS   : -138.897
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divf:dvfl|clkl'
+Slack : -1.403
+TNS   : -26.657
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.328
+TNS   : -8.703
+
+Type  : Fast 1200mV 0C Model Setup 'divf:dvfl|clkl'
+Slack : -0.743
+TNS   : -8.673
+
+Type  : Fast 1200mV 0C Model Setup 'divf:dvfff|clkl'
+Slack : -0.652
+TNS   : -3.209
+
+Type  : Fast 1200mV 0C Model Hold 'divf:dvfl|clkl'
+Slack : 0.221
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divf:dvfff|clkl'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.246
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.190
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divf:dvfff|clkl'
+Slack : -1.000
+TNS   : -99.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divf:dvfl|clkl'
+Slack : -1.000
+TNS   : -19.000
+
+------------------------------------------------------------

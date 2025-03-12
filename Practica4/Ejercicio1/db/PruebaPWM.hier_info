@@ -1,0 +1,13 @@
+|PruebaPWM
+clk => snl~reg0.CLK
+clk => conteo[0].CLK
+clk => conteo[1].CLK
+clk => conteo[2].CLK
+clk => conteo[3].CLK
+duty[0] => LessThan0.IN4
+duty[1] => LessThan0.IN3
+duty[2] => LessThan0.IN2
+duty[3] => LessThan0.IN1
+snl <= snl~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
