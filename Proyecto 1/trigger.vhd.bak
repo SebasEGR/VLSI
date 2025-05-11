@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+--u3: entity work.trigger(arqtrg) port map(clkl2, rst, echo, tr);
+entity trigger is
+port (clk, rst, echo: in std_logic;
+		salida: out std_logic);
+end entity;
+
+architecture arqtrigger of trigger is
+begin
+	process(clk)
+		begin
+			if(rst = '1') then
+				salida <= '0';
+			elsif(echo = '0') then
+				salida <= clk;
+			end if;
+				
+				
+				
+				
+--				if(echo <= '1') then
+--					salida <= '0';
+--				else
+--					salida <= clk; -- falta
+--				end if;
+--			end if;
+		end process;
+end architecture;

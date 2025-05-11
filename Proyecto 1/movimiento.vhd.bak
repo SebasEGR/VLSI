@@ -1,0 +1,39 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity movimiento is
+port (clk, si, sd, se, s1, s9: in std_logic;
+		izq, der: out std_logic;
+		ancho: out integer);
+end entity;
+
+architecture arqmov of movimiento is
+signal pwm: integer;
+begin
+	process (clk, si, sd, se)
+		begin
+			
+			if((si = '0' or si = '1') and (sd = '0' or sd = '1') and se = '0') then
+				izq <= '0';
+				der <= '0';
+			elsif(si = '1' and sd = '0' and se = '1') then
+				izq <= '1';
+				der <= '0';
+			elsif(si = '0' and sd = '1' and se = '1') then
+				izq <= '0';
+				der <= '1';
+			elsif(si = '1' and sd = '1' and se = '1') then
+				izq <= '0';
+				der <= '0';
+			end if;
+			
+			if(s1 = '1' and s9 = '0') then
+				pwm <= 500;
+			elsif(s1 = '0' and s9 = '1') then
+				pwm <= 999;
+			end if;
+
+			ancho <= pwm;
+			
+		end process;
+end architecture;

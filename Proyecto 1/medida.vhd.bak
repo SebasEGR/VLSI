@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity medida is
+port (entrada: in integer;
+		salida0, salida1: out integer);
+end;
+
+architecture arqmed of medida is
+begin
+with entrada select
+salida0, salida1 <=
+0, 1 when (conteo>0 and conteo<=58),
+0, 2 when conteo>58 and conteo<=118;
+end arqmed;
