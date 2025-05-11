@@ -1,0 +1,27 @@
+-- Bibliotecas necesarias para las definiciones estándar
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- Declaración de la entidad divf
+entity divf is
+    generic (num: integer := 25000000); -- Parámetro genérico para la frecuencia de salida
+    port (clk: in std_logic; -- Puerto de entrada del reloj
+          clkl: buffer std_logic := '0'); -- Puerto de salida para la señal dividida
+end entity;
+
+-- Arquitectura para la entidad divf
+architecture arqdivf of divf is
+    signal conteo: integer range 0 to num; -- Señal de contador para el conteo del reloj dividido
+begin
+    process(clk) -- Proceso activado en cada flanco ascendente del reloj de entrada
+    begin
+        if(rising_edge(clk)) then
+            if(conteo = num) then -- Cuando el contador alcanza el valor deseado
+                conteo <= 0; -- Reinicia el contador
+                clkl <= not clkl; -- Invierte la señal de salida
+            else
+                conteo <= conteo + 1; -- Incrementa el contador
+            end if;
+        end if;
+    end process;
+end architecture;

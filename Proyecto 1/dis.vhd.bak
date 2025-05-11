@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity distancia is
+port (clk, take: in std_logic;
+		salida2, salida3, dis: in integer;
+		ss2, ss3: out std_logic_vector);
+end entity;
+
+architecture arqdis of distancia is
+begin
+
+	process (clk, salida2, salida3, dis)
+	begin
+	
+		if (rising_edge(clk)) then
+		
+			if (take = '1') then
+			
+				ss2 <= salida2;
+				ss3 <= salida3;
+			
+			end if;
+		
+		end if;
+	
+	end process;
+
+end architecture;

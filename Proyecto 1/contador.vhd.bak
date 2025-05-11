@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+-- u4: entity work.contador(arqcnt) port map(echo, clkl1, tr, led);
+entity contador is
+port (echo, clkl1, rst: in std_logic;
+		salida: out std_logic); -- led
+end entity;
+
+architecture arqcontador of contador is
+signal conteo: integer range 0 to 12000; -- un cero más
+begin
+	process(echo, clkl1, rst)
+		begin
+			if(rst = '1') then
+				conteo <= 0;
+				salida <= '0';
+			elsif(rising_edge(clkl1)) then
+				if(echo = '1') then
+					conteo <= conteo + 1;
+					salida <= '0';
+					else
+						if(conteo > 236 and conteo <= 353) then -- 20 cm
+						-- rango de 20 cm (conteo <= 1180)
+						-- en 5 cm (conteo > 236 and conteo <= 353)
+						-- en 20 cm (conteo > 1118 and conteo <= 1236)
+							salida <= '1';
+						else
+							salida <= '0';
+					end if;
+				end if;
+			end if;
+		end process;
+end architecture;
